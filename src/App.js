@@ -40,10 +40,8 @@ class App extends React.Component {
   toggleDone = id => {
     let todoitems = this.state.todoitems.slice();
     todoitems = todoitems.map(todoitem => {
-
     if(todoitem.id === id){
       todoitem.completed = !todoitem.completed;
-
       return todoitem;
     } else {
       return todoitem;
