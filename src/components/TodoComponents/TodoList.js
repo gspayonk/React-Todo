@@ -7,7 +7,7 @@ import ToDo from './Todo';
 const ToDoList = props => {
 
     return (
-        <div>
+        <div className='list'>
             {props.todoitems.map (todoitem => (
                 <ToDo
                     handleToggleDone = {props.handleToggleDone}
